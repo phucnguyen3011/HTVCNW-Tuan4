@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{padding: 0px; margin: 0px auto;}
+        .wrapper{height: 700px; width: 960px;}
+        header{
+            height: 150px;width: 960px;background-color: #294e79; position: absolute;
+        }
+        header img{position: absolute;top: 20px;left: 30px;}
+        .p1{font-size: 30px; position: absolute; top: 15px; left: 100px; color: white;}
+        .p2{font-size: 20px; position: absolute; top: 40px; left: 120px; color: white;}
+        .top-menu li{
+            height: 45px;width: 130px;
+            background-color: #3d73b1;
+            float: left;
+            position: absolute;
+            list-style: none;
+            text-indent: 20px;
+            line-height: 45px;
+            bottom: 10px;
+        }
+        .frm #srch{
+            height: 20px;
+            background-color: #1c3451;
+            color: white;
+            float: left;
+            position: absolute;
+            top: 5px;
+            right: 35px;
+            border: 1px solid #4170aa;
+        }
+        .frm #sbm{
+            height: 20px;width: 25px;
+            background-color: #1c3451;
+            color: white;
+            float: left;
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            border: 1px solid #4170aa;
+        }
+        li a{color : whitesmoke; text-decoration: none; font-weight: bolder;}
+        .top-menu li:hover{
+            background-color: blue;
+        }
+        li:hover>a{
+            color: yellow;
+            font-style: italic;
+        }
+        .top-menu li:last-child{
+            right: 20px;
+        }
+        .top-menu li:nth-child(4){
+            right: 155px;
+        }
+        .top-menu li:nth-child(3){
+            right: 290px;
+        }
+        .top-menu li:nth-child(2){
+            right: 425px;
+        }
+        .top-menu li:first-child{
+            right: 560px;
+        }
+        .content{
+            height: 479px;width: 960px;
+            position: absolute;
+            top: 150px;
+        }
+        .c1{
+            height: 479px; width: 350px;
+            position: absolute;
+        }
+        .c1 h2{
+            position: absolute;
+            top: 40px;
+        }
+        .c1 #line{
+            position: absolute;
+            top: 80px;
+            width: 500px;
+            border-bottom: 2px dashed;
+        }
+        .c1 #txtP{
+            position: absolute;
+            top: 100px;
+            font-style: italic;
+            color: red;
+            text-shadow:3px 3px 3px green;
+        }
+        .c1 .cusID{
+            position: absolute;
+            top: 190px;
+        }
+        footer{
+            background-color: darkslateblue;
+            height: 20px; width: 960px;
+            position: absolute;
+            bottom: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <img src="../img/logo.png" alt="">
+            <p class="p1">
+                FlowerBox 360
+            </p>
+            <p class="p2">
+                ...to get your daily dose of luxury roses!
+            </p>
+            <form class="frm">
+                <input type="text" id="srch" value="Search the site...">
+                <input type="submit" id="sbm" value="GO">
+            </form>
+            <ul class="top-menu">
+                <li><a href="">Home</a></li>
+                <li><a href="">Promotion</a></li>
+                <li><a href="">Gift Basket</a></li>
+                <li><a href="">Flower Services</a></li>
+                <li><a href="">About</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="c1">
+                <h2>Why Not Contact Us Today !</h2>
+                <p id="line"></p>
+                <p id="txtP">For FlowerBox 360 shoppers, that means not only can 
+                    you send your friends and loved ones the 
+                    higest quality flowers found on online, but 
+                    that you can do so at a great value.
+                </p>
+                <form class="cusID">
+                    <table>
+                        <tr>
+                            <td>Name:</td>
+                            <td>Email:</td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>Telephone:</td>
+                            <td>Subject:</td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td>Message:</td>
+                        </tr>
+                        <tr>
+                            <td><textarea  cols="50" rows="5" tabindex="2"></textarea></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div class="c2">
+
+            </div>
+            <div class="c3">
+
+            </div>
+        </div>
+        <footer>
+            <span style="color: white;">Copyright 2017 - All Rights Reserved - </span>
+            <span style="color: lightblue;">Software Engineering Department - Industrial of Ho Chi Minh City</span>
+        </footer>
+    </div>
+</body>
+</html>
