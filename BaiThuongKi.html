@@ -83,7 +83,7 @@
         .c1 #line{
             position: absolute;
             top: 80px;
-            width: 500px;
+            width: 700px;
             border-bottom: 2px dashed;
         }
         .c1 #txtP{
@@ -97,6 +97,68 @@
             position: absolute;
             top: 190px;
         }
+        .c2{
+            height: 479px; width: 350px;
+            position: absolute;
+            left: 390px;
+        }
+        .c2 h2{
+            position: absolute;
+            top: 100px;
+        }
+        .c2 #line2{
+            position: absolute;
+            top: 140px;
+            width: 300px;
+            border-bottom: 2px dashed;
+        }
+        .c2 #c2p1{
+            position: absolute;
+            top: 160px;
+        }
+        .c2 #c2p2{
+            position: absolute;
+            top: 280px;
+        }
+        .c2 #c2p3{
+            position: absolute;
+            top: 350px;
+        }
+        .c3{
+            height: 300px;
+            width: 220px;
+            padding: 20px;
+            background-color: lavender;
+            position: absolute;
+            top: 50px;
+            left: 720px;
+        }
+        .c3 #line3{
+            position: absolute;
+            top: 60px;
+            width: 220px;
+            border-bottom: 2px dashed;
+        }
+        .c3 img{
+            position: absolute;
+            top: 80px;
+            width: 210px;
+            height: 80px;
+            padding: 2px;
+            border: 1px solid;
+        }
+        .c3 #c3p{
+            position: absolute;
+            top: 180px;
+            width: 225px;
+        }
+        .c3 a{
+            position: absolute;
+            top: 300px;
+            right: 30px;
+            color: blue;
+            font-weight: bolder;
+        }
         footer{
             background-color: darkslateblue;
             height: 20px; width: 960px;
@@ -108,7 +170,7 @@
 <body>
     <div class="wrapper">
         <header>
-            <img src="../img/logo.png" alt="">
+            <img src="./logo.png" alt="">
             <p class="p1">
                 FlowerBox 360
             </p>
@@ -160,16 +222,44 @@
                             <td>Message:</td>
                         </tr>
                         <tr>
-                            <td><textarea  cols="50" rows="5" tabindex="2"></textarea></td>
+                            <td><textarea  cols="43" rows="5" tabindex="2"></textarea></td>
                         </tr>
                     </table>
+                    <input type="submit" value="Submit">
+                    <input type="submit" value="Reset">
                 </form>
             </div>
             <div class="c2">
-
+                <h2>FlowerBox 360 Info!</h2>
+                <p id="line2"></p>
+                <p id="c2p1">Operating Hours: <br> 
+                    Monday-Friday: 9.00am-5.00pm. <br>
+                    Saturday: 9.00am-1.00pm. <br>
+                    Sunday: Closed (No Deliveries) <br>
+                    ORDER ONLINE 24/7
+                </p>
+                <p id="c2p2">
+                    Software Engineering Dept. <br>
+                    Information Technology Falcuty <br>
+                    First Floor, H Building
+                </p>
+                <p id="c2p3">
+                    12 Nguyen Van Bao St., Ward 4 <br>
+                    Go Vap District <br>
+                    Ho Chi Minh City <br>
+                    Tel: 0283 8940 390 <br>
+                    Fax: 0283.9940 954
+                </p>
             </div>
             <div class="c3">
-
+                <h2>Discounts & Specials</h2>
+                <p id="line3"></p>
+                <img src="./flower.png">
+                <p id="c3p">FlowerBox 360 offers many great discounts throughout the year, from
+                    coupons and coupon codes, to promo codes and other savings. We also
+                    offer military flower discounts to our wonderful troops!
+                </p>
+                <a href="">Read more >></a>
             </div>
         </div>
         <footer>
